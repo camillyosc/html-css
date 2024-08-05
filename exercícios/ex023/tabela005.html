@@ -14,21 +14,52 @@
       width: 500px;
     }
 
+    caption {
+      font-size: 1.3em;
+      font-weight: bolder;
+      padding: 8px;
+
+    }  
+
+
     td, th {
       border: 1px solid black;
       padding: 10px;
       text-align: center;
     }
+
+    .destaque {
+      background-color: chartreuse;
+    }
+
+    .cnome {
+      background-color: chartreuse;
+    }
+
+    .amarelo {
+      background-color: yellow;
+    }
+
+    .vermelho {
+      background-color: red;
+    }
+
   </style>
 </head>
 <body>
   <table>
+    <colgroup>
+      <col class="amarelo">
+      <col class="vermelho" span="2">
+      <col class="amarelo">
+    
+    </colgroup>
     <caption>Cadastro</caption>
     <thead>
-      <th>Nome</th>
-      <th>Sexo</th>
-      <th>Idade</th>
-      <th>Profissão</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Profissão</th>
     </thead>
     <tbody>
       <tr>
